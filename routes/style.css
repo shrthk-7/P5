@@ -1,0 +1,40 @@
+:root {
+	--theme-bg: #011627;
+	--theme-fg: #ffffffcc;
+	--theme-selection-bg: #5f7e9779;
+	--theme-primary: #22da6e;
+	--theme-secondary: #21c7a8;
+	--theme-warn-bg: #ffca28;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+}
+body {
+	background-color: var(--theme-bg);
+	color: var(--theme-fg);
+}
+h1 {
+	color: var(--theme-primary);
+	font-size: 3rem;
+	padding: 2rem;
+}
+
+p {
+	width: min(70vw, 80rem);
+	font-size: 1.5rem;
+	margin: 2rem;
+}
+
+canvas {
+	display: block;
+	margin-left: 2rem;
+}
+@media screen and (max-width:450px) {
+	canvas{
+		margin:auto;
+	}
+}
